@@ -1,5 +1,5 @@
 {
-  "name": "monkeytype",
+  "name": "salimtype",
   "version": "1.5.6",
   "license": "GPL-3.0",
   "private": true,
@@ -7,8 +7,8 @@
     "postinstall": "cd functions && npm install",
     "build": "npx gulp build",
     "start:dev": "npm run build && concurrently --kill-others \"npx gulp watch\" \"firebase serve\"",
-    "deploy:live:hosting": "npm run build && firebase deploy -P monkey-type --only hosting",
-    "deploy:live:functions": "npm run build && firebase deploy -P monkey-type --only functions",
+    "deploy:live:hosting": "npm run build && firebase deploy -P salimtype --only hosting",
+    "deploy:live:functions": "npm run build && firebase deploy -P salimtype --only functions",
     "deploy:live": "npm run build && firebase deploy -P live"
   },
   "engines": {

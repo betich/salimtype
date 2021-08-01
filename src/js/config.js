@@ -38,7 +38,7 @@ export function setChangedBeforeDb(val) {
 let loadDone;
 
 let defaultConfig = {
-  theme: "serika_dark",
+  theme: "salim",
   customTheme: false,
   customThemeColors: [
     "#323437",
@@ -63,7 +63,7 @@ let defaultConfig = {
   time: 30,
   mode: "time",
   quoteLength: [1],
-  language: "english",
+  language: "salim",
   fontSize: 15,
   freedomMode: false,
   resultFilters: null,
@@ -1294,7 +1294,7 @@ export function setCustomThemeColors(colors, nosave) {
 
 export function setLanguage(language, nosave) {
   if (language == null || language == undefined) {
-    language = "english";
+    language = "salim";
   }
   config.language = language;
   try {

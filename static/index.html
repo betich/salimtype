@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monkeytype</title>
+    <title>Salimtype</title>
     <!-- <link rel="stylesheet" href="css/fa.css" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/balloon.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
-    <link rel="stylesheet" href="themes/serika_dark.css" id="currentTheme" />
+    <link rel="stylesheet" href="themes/salim.css" id="currentTheme" />
     <link rel="stylesheet" href="" id="funBoxTheme" />
     <link id="favicon" rel="shortcut icon" href="images/fav.png" />
     <link rel="shortcut icon" href="images/favicon/fav.png" />
@@ -47,18 +47,18 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <meta name="name" content="Monkeytype" />
+    <meta name="name" content="Salimtype" />
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
-      content="A minimalistic, customisable typing website. Test yourself in various modes, track your progress and improve your typing speed."
+      content="A fork from monkeytype.com for typing awesome salim quotes."
     />
     <meta
       name="keywords"
-      content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
+      content="typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test, salimtype, salim, salim-quotes, wataslim, watasalim, watasalim-type"
     />
     <meta name="author" content="Miodec" />
-    <meta property="og:title" content="Monkeytype" />
+    <meta property="og:title" content="Salimtype" />
     <meta property="og:url" content="https://monkeytype.com/" />
     <meta property="og:type" content="website" />
     <meta
@@ -67,7 +67,7 @@
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
-    <meta name="twitter:title" content="Monkeytype" />
+    <meta name="twitter:title" content="Salimtype" />
     <meta name="twitter:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- <script type="text/javascript">
@@ -108,9 +108,13 @@
       Important information about your account. Please click this message.
     </div>
     <div class="merchBanner hidden">
-      <img src="images/merchdropwebsite2.png" alt="" />
-      We've got brand new merch designs over at
-      <a href="https://monkeytype.store" target="_blank">monkeytype.store</a>
+      <img src="images/rukchart.gif" alt="" />
+      This is a fork of
+      <a href="https://monkeytype.com/" target="_blank">monkeytype.com</a>
+      with data from
+      <a href="https://watasalim.vercel.app/" target="_blank">
+        salim quotes api
+      </a>
       <i class="fas closeButton fa-times"></i>
     </div>
 
@@ -935,12 +939,20 @@
     <div id="timerWrapper">
       <div id="timer" class="timerMain"></div>
     </div>
-    <div style="display: flex; justify-content: space-around">
+    <div
+      style="display: flex; justify-content: space-around; position: relative"
+    >
+      <div id="salim-credit" style="position: absolute; top: 12px; right: 12px">
+        from
+        <a href="https://watasalim.vercel.app/" target="_blank">
+          salim quotes api
+        </a>
+      </div>
       <div id="centerContent" class="hidden">
         <div id="top">
           <div class="logo">
-            <div class="top">monkey see</div>
-            <div class="bottom">monkeytype</div>
+            <div class="top">salim see</div>
+            <div class="bottom">salimtype</div>
           </div>
           <div id="menu">
             <div
@@ -1712,7 +1724,7 @@
                 </a>
                 <a
                   class="button"
-                  href="https://discord.gg/monkeytype"
+                  href="https://discord.gg/w6gyXyQ9YU"
                   target="_blank"
                 >
                   <div class="fab fa-discord"></div>
@@ -1720,7 +1732,7 @@
                 </a>
                 <a
                   class="button"
-                  href="https://github.com/Miodec/monkeytype"
+                  href="https://github.com/betich"
                   target="_blank"
                 >
                   <div class="fab fa-github"></div>
@@ -4503,6 +4515,12 @@
           ></div> -->
         </div>
       </div>
+    </div>
+    <div
+      class="salim"
+      style="position: fixed; bottom: 0; left: 70%; transform: translateX(-50%)"
+    >
+      <img src="images/rukchart.gif" alt="salim sticker" id="salim_sticker" />
     </div>
   </body>
   <!-- The core Firebase JS SDK is always required and must be listed first -->

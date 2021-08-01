@@ -1,0 +1,187 @@
+:root {
+  --bg-color: linear-gradient(
+    180deg,
+    #610404 0%,
+    #610404 19%,
+    #ababab 20%,
+    #ababab 29%,
+    #150b54 30%,
+    #150b54 50%,
+    #150b54 70%,
+    #ababab 71%,
+    #ababab 80%,
+    #610404 81%,
+    #610404 100%
+  );
+  --main-color: #eed;
+  --caret-color: #eed;
+  --sub-color: #edd;
+  --text-color: #ddee99;
+  --error-color: #e66;
+  --error-extra-color: #e76;
+  --colorful-error-color: #dd3;
+  --colorful-error-extra-color: #fd4;
+}
+
+#notificationCenter .notif {
+  background-color: var(--main-color);
+  color: rgba(165, 25, 49, 1);
+}
+
+.merchBanner {
+  background-color: #31b;
+  color: var(--bg-color);
+}
+
+key {
+  background-color: var(--main-color);
+  color: rgba(165, 25, 49, 1);
+}
+
+.button:hover {
+  background-color: var(--main-color);
+  color: rgba(165, 25, 49, 1);
+}
+
+.button.active:hover {
+  color: var(--text-color);
+}
+
+.text:hover {
+  color: var(--text-color);
+}
+.text.active {
+  background-color: var(--main-color);
+}
+
+.text-button.active {
+  padding: 1px;
+  background-color: #eeeedd66;
+}
+
+.pageSettings .section .button.danger:hover {
+  background-color: var(--text-color);
+  color: var(--error-color);
+}
+
+#top .logo .bottom {
+  background: none;
+}
+
+#capsWarning {
+  background-color: var(--main-color);
+  color: rgba(165, 25, 49, 1);
+}
+
+@keyframes salim {
+  0% {
+    color: rgba(165, 25, 49, 1);
+  }
+  19% {
+    color: rgba(165, 25, 49, 1);
+  }
+  20% {
+    color: rgba(244, 245, 248, 1);
+  }
+  29% {
+    color: rgba(244, 245, 248, 1);
+  }
+  30% {
+    color: rgba(45, 62, 187, 1);
+  }
+  50% {
+    color: rgba(45, 62, 187, 1);
+  }
+  70% {
+    color: rgba(45, 62, 187, 1);
+  }
+  71% {
+    color: rgba(244, 245, 248, 1);
+  }
+  80% {
+    color: rgba(244, 245, 248, 1);
+  }
+  81% {
+    color: rgba(165, 25, 49, 1);
+  }
+  100% {
+    color: rgba(165, 25, 49, 1);
+  }
+}
+
+@keyframes salim-bg {
+  0% {
+    background: rgba(165, 25, 49, 1);
+  }
+  19% {
+    background: rgba(165, 25, 49, 1);
+  }
+  20% {
+    background: rgba(244, 245, 248, 1);
+  }
+  29% {
+    background: rgba(244, 245, 248, 1);
+  }
+  30% {
+    background: rgba(45, 62, 187, 1);
+  }
+  50% {
+    background: rgba(45, 62, 187, 1);
+  }
+  70% {
+    background: rgba(45, 62, 187, 1);
+  }
+  71% {
+    background: rgba(244, 245, 248, 1);
+  }
+  80% {
+    background: rgba(244, 245, 248, 1);
+  }
+  81% {
+    background: rgba(165, 25, 49, 1);
+  }
+  100% {
+    background: rgba(165, 25, 49, 1);
+  }
+}
+
+.button.discord::after,
+#caret,
+.pageSettings .section .buttons .button.active,
+.pageSettings .section.languages .buttons .language.active,
+.pageAccount .group.filterButtons .buttons .button.active {
+  animation-name: salim-bg !important;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#top.focus .button.discord::after,
+#top .button.discord.dotHidden::after {
+  animation-name: none !important;
+}
+
+.logo .bottom,
+#top .config .group .buttons .text-button.active,
+#result .stats .group .bottom,
+#menu .icon-button:hover,
+#top .config .group .buttons .text-button:hover,
+a:hover,
+#words.flipped .word {
+  animation-name: salim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.word letter.correct {
+  color: var(--text-color);
+}
+
+#words.flipped .word letter.correct {
+  color: var(--text-color);
+}
+
+#words:not(.flipped) .word letter.correct {
+  color: var(--text-color);
+}

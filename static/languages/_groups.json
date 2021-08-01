@@ -11,6 +11,10 @@
     ]
   },
   {
+    "name": "salim",
+    "languages": ["salim"]
+  },
+  {
     "name": "spanish",
     "languages": ["spanish", "spanish_1k", "spanish_10k"]
   },
