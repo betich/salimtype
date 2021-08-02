@@ -1187,7 +1187,7 @@ export function setFontFamily(font, nosave) {
   config.fontFamily = font;
   document.documentElement.style.setProperty(
     "--font",
-    `"${font.replace(/_/g, " ")}", "Roboto Mono"`
+    `"${font.replace(/_/g, " ")}", "Trirong"`
   );
   ChartController.setDefaultFontFamily(font);
   if (!nosave) saveToLocalStorage();
@@ -1296,10 +1296,10 @@ export function setLanguage(language, nosave) {
   if (language == null || language == undefined) {
     language = "salim";
   }
-  config.language = language;
+  config.language = "salim";
   try {
     firebase.analytics().logEvent("changedLanguage", {
-      language: language,
+      language: "salim",
     });
   } catch (e) {
     console.log("Analytics unavailable");

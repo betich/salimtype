@@ -21,6 +21,7 @@
   --error-extra-color: #e76;
   --colorful-error-color: #dd3;
   --colorful-error-extra-color: #fd4;
+  --font: "Trirong", "Roboto Mono" !important;
 }
 
 #notificationCenter .notif {
@@ -31,6 +32,14 @@
 .merchBanner {
   background-color: #31b;
   color: var(--bg-color);
+}
+
+#commandLineWrapper #commandLine .suggestions .entry.activeMouse {
+  color: #e76;
+}
+
+.notif.bad {
+  display: none;
 }
 
 key {
@@ -164,14 +173,17 @@ key {
 .logo .bottom,
 #top .config .group .buttons .text-button.active,
 #result .stats .group .bottom,
-#menu .icon-button:hover,
-#top .config .group .buttons .text-button:hover,
-a:hover,
 #words.flipped .word {
   animation-name: salim;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#menu .icon-button:hover,
+#top .config .group .buttons .text-button:hover,
+a:hover {
+  color: var(--text-color);
 }
 
 .word letter.correct {

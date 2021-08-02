@@ -24,15 +24,15 @@ class Notification {
   show() {
     let cls = "notice";
     let icon = `<i class="fas fa-fw fa-exclamation"></i>`;
-    let title = "Notice";
+    let title = "รักชาติ";
     if (this.level === 1) {
       cls = "good";
       icon = `<i class="fas fa-fw fa-check"></i>`;
-      title = "Success";
+      title = "รักชาติ";
     } else if (this.level === -1) {
       cls = "bad";
       icon = `<i class="fas fa-fw fa-times"></i>`;
-      title = "Error";
+      title = "ชังชาติ";
       console.error(this.message);
     }
 
@@ -50,7 +50,7 @@ class Notification {
         
         <div class="notif ${cls}" id=${this.id}>
             <div class="icon">${icon}</div>
-            <div class="message"><div class="title">${title}</div>${this.message}</div>
+            <div class="message"><div class="title">${title}</div></div>
         </div>     
 
         `);
@@ -69,7 +69,7 @@ class Notification {
         
                 <div class="notif ${cls}" id=${this.id}>
                     <div class="icon">${icon}</div>
-                    <div class="message"><div class="title">${title}</div>${this.message}</div>
+                    <div class="message"><div class="title">${title}</div></div>
                 </div>     
 
             `);

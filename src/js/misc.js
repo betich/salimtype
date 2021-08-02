@@ -232,7 +232,7 @@ export async function getChallengeList() {
 
 export function showNotification(text, time) {
   let noti = $(".notification");
-  noti.text(text);
+  noti.text("lol: " + text);
   noti.css("top", `-${noti.outerHeight()}px`);
   noti.stop(true, false).animate(
     {
