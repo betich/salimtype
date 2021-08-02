@@ -12,4 +12,5 @@ see the app live here: [live demo](https://salim-type.web.app/)
 
 ## easter eggs
 
-you can use [manoonchai](https://manoonchai.com/) keyboard layout here
+* you can use [manoonchai](https://manoonchai.com/) keyboard layout here
+* this site's font is called [Trirong](https://fonts.google.com/specimen/Trirong)
