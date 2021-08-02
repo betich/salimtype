@@ -9,3 +9,7 @@ salimtype is a fork of [monkeytype.com](<[monkeytype.com](https://monkeytype.co)
 # live demo
 
 see the app live here: [live demo](https://salim-type.web.app/)
+
+## easter eggs
+
+you can use [manoonchai](https://manoonchai.com/) keyboard layout here
